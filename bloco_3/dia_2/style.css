@@ -1,25 +1,35 @@
 h1 {
+    font-size: 65px;
+    color: orange;
+}
+ul {
+    background-color: palegreen;
+}
+.testando {
+    background-color: aqua;
+}
+h1 {
     font-family: sans-serif;
     font-style: oblique;
-  }
-  p {
+}
+p {
     font-weight: 600;
     font-size: 3em;
     text-decoration: brown;
-  }
-  body {
+}
+body {
     font-size: 16px;
-  }
-  ul {
+}
+ul {
     line-height: 50px;
     text-align: center;
-  }
-  #yellow {
+}
+#yellow {
     background-color: yellow;
-  }
-  #red {
+}
+#red {
     background-color: red;
-  }
-  #brown {
+}
+#brown {
     background-color: brown;
-  }
+}
