@@ -1,0 +1,25 @@
+h1 {
+    font-family: sans-serif;
+    font-style: oblique;
+  }
+  p {
+    font-weight: 600;
+    font-size: 3em;
+    text-decoration: brown;
+  }
+  body {
+    font-size: 16px;
+  }
+  ul {
+    line-height: 50px;
+    text-align: center;
+  }
+  #yellow {
+    background-color: yellow;
+  }
+  #red {
+    background-color: red;
+  }
+  #brown {
+    background-color: brown;
+  }
