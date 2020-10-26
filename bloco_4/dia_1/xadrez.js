@@ -21,4 +21,6 @@ switch(peca) {
     case "rei":
         console.log("move para qualquer direcao apenas uma unidade");
         break
+    default:
+        console.log("nome invalido");
 }
