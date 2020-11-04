@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="paiDoPai">
+        <div id="pai">
+            <div id="primeiroFilho"><p>teste</p></div>
+            <div id="elementoOndeVoceEsta">
+                <div id="primeiroFilhoDoFilho"></div>
+                <div id="segundoEUltimoFilhoDoFilho"><p>teste2</p></div>
+            </div>
+            Atenção!
+            <div id="terceiroFilho"><p>teste3</p></div>
+            <div id="quartoEUltimoFilho"><p>teste4</p></div>
+        </div>
+    </div>
+
+    <script>
+        let papai = document.querySelector("#pai");
+        papai.removeChild(document.querySelector("#primeiroFilho"));
+        papai.removeChild(document.querySelector("#terceiroFilho"));
+        papai.removeChild(document.querySelector("#quartoEUltimoFilho"));
+
+        let eu = document.querySelector("#elementoOndeVoceEsta")
+        eu.removeChild(document.querySelector("#segundoEUltimoFilhoDoFilho"));
+
+    </script>
+
+    <!--
+        Remova todos os elementos da página, menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+    -->
+
+</body>
+</html>
