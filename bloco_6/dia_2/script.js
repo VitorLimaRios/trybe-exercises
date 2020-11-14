@@ -25,7 +25,6 @@ function dadosRecebidos() {
   const endereco = document.querySelector('#endereco').value;
   const cidade = document.querySelector('#cidade').value;
   const estado = document.querySelector('#estados').value;
-  
   const casa = document.querySelector('#casa');
   let moradia;
   if (casa.checked) {
@@ -33,7 +32,6 @@ function dadosRecebidos() {
   } else {
     moradia = 'apartamento';
   }
-
   const resumo = document.querySelector('#resumo').value;
   const cargo = document.querySelector('#cargo').value;
   const descricao = document.querySelector('#descricao').value;
