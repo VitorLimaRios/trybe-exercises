@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="paiDoPai">
+        <div id="pai">
+            <div id="primeiroFilho"></div>
+            <div id="elementoOndeVoceEsta">
+                <div id="primeiroFilhoDoFilho"></div>
+                <div id="segundoEUltimoFilhoDoFilho"></div>
+            </div>
+            Atenção!
+            <div id="terceiroFilho"></div>
+            <div id="quartoEUltimoFilho"></div>
+        </div>
+    </div>
+
+    <script>
+        let irmao = document.createElement("p");
+        irmao.innerText = "testando";
+        document.querySelector("#pai").appendChild(irmao)
+
+        let filho = document.createElement("p");
+        filho.innerText = "testando novamente";
+        document.querySelector("#elementoOndeVoceEsta").appendChild(filho);
+
+        let neto = document.createElement("p");
+        neto.innerText = "poisé, tu já sabe o que eu to fazendo....";
+        neto.className = "parte2";
+        document.querySelector("#primeiroFilhoDoFilho").appendChild(neto);
+
+        neto.parentNode.parentNode.nextElementSibling;
+
+    </script>
+
+    <!--
+        Crie um irmão para elementoOndeVoceEsta.
+        Crie um filho para elementoOndeVoceEsta.
+        Crie um filho para primeiroFilhoDoFilho.
+        A partir desse filho criado, acesse terceiroFilho.
+    -->
+
+</body>
+</html>

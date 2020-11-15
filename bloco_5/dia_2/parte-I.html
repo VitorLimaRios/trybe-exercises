@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="paiDoPai">
+        <div id="pai">
+            <div id="primeiroFilho"></div>
+            <div id="elementoOndeVoceEsta">
+                <div id="primeiroFilhoDoFilho"></div>
+                <div id="segundoEUltimoFilhoDoFilho"></div>
+            </div>
+            Atenção!
+            <div id="terceiroFilho"></div>
+            <div id="quartoEUltimoFilho"></div>
+        </div>
+    </div>
+
+    <script>
+        let inicio = document.querySelector("#elementoOndeVoceEsta");
+        inicio.parentNode.style.backgroundColor = "red";
+        inicio.firstElementChild.innerText = "adicionando um texto para esta div";
+
+        let papai = document.querySelector("#pai");
+        papai.firstElementChild;
+        inicio.previousElementSibling;
+        inicio.nextSibling;
+        inicio.nextElementSibling;
+        papai.childNodes[5];
+
+    </script>
+
+    <!--
+        Acesse o elemento elementoOndeVoceEsta.
+        Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+        Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+        Acesse o primeiroFilho a partir de pai.
+        Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+        Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+        Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+        Agora acesse o terceiroFilho a partir de pai.
+    -->
+
+</body>
+</html>
