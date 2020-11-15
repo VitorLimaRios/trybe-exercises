@@ -102,6 +102,23 @@
       div1.appendChild(h3_2);
       let h3_3 = document.createElement('h3');
       div1.appendChild(h3_3);
+
+      /*Second part of the exercise*/
+
+      h1.classList.add('title');
+
+      h3_1.classList.add('description');
+      h3_2.classList.add('description');
+      h3_3.classList.add('description');
+
+      div1.removeChild(divLeft);
+
+      divRight.style.marginRight = 'auto';
+
+      div2.style.background = 'green';
+
+      ul.removeChild(ul.children[ul.children.length - 1])
+      ul.removeChild(ul.children[ul.children.length - 1])
     </script>
 
     <!--
@@ -114,6 +131,15 @@
         7.Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
         8.Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
         9.Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
+    -->
+
+    <!--
+      1.Adicione a classe title na tag h1 criada;
+      2.Adicione a classe description nas 3 tags h3 criadas;
+      3.Remova o div criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+      4.Centralize o div criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto do div;
+      5.Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+      6.Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
     -->
 
   </body>
