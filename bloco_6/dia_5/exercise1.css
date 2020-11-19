@@ -1,0 +1,28 @@
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+@media (max-width: 414px) {
+  body {
+    margin: 5px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  figure {
+    margin: 25px;
+  }
+}
