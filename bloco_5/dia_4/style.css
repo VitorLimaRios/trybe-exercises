@@ -1,0 +1,8 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user input {
+  width: 100%;
+}
