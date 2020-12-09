@@ -1,4 +1,4 @@
-// Quando a promise for resolvida com sucesso, retorne o resultado da divisão desse número por 2, 3, 5 e 10 em um array.
+// Quando a Promise for rejeitada, imprima, via console.log , a frase "É mais de oito mil! Essa promise deve estar quebrada!"
 
 new Promise((resolve, reject) => {
   const randomNumbers = [];
@@ -10,7 +10,7 @@ new Promise((resolve, reject) => {
   if (sum < 8000) {
     resolve(sum);
   }
-  reject('error');
+  reject('É mais de oito mil! Essa promise deve estar quebrada!');
 })
   .then((sum) => {
     const arr = [2, 3, 5, 10];
