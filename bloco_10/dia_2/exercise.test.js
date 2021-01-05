@@ -1,7 +1,8 @@
-const { expect, it } = require('@jest/globals');
+const { describe, it, expect } = require('@jest/globals');
 const {
   uppercase,
   getUserName,
+  getRepos,
 } = require('./exercises');
 
 describe('Exercise 1', () => {
@@ -38,5 +39,13 @@ describe('Exercise 3', () => {
     } catch (error) {
       expect(error).toEqual({ error: 'User with 7 not found.' });
     }
+  });
+});
+
+describe('Exercise 4', () => {
+  it('Faça um teste que verifique que os repositórios sd-01-week4-5-project-todo-list e sd-01-week4-5-project-meme-generator se encontram nessa lista.', async () => {
+    const data = await getRepos('https://api.github.com/users/tryber/repos');
+    expect(data).toContain('challenge-bug-hunting-youtrybe-squad-5');
+    expect(data).toContain('exercise-pokedex-state');
   });
 });
