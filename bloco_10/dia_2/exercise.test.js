@@ -3,6 +3,8 @@ const {
   uppercase,
   getUserName,
   getRepos,
+  getAnimal,
+  getAnimalByAge,
 } = require('./exercises');
 
 describe('Exercise 1', () => {
@@ -64,4 +66,40 @@ describe('Scoped / Nested block', () => {
   test('', () => console.log('2 - test'));
 });
 */
-// 1 - afterEach 1 - beforeEach 1 - test 1 - afterEach 1 - beforeEach 2 - beforeEach 2 - test 2 - afterEach 1 - afterEach
+// 1 - beforeEach 1 - test 1 - afterEach 1 - beforeEach 2 - beforeEach 2 - test 2 - afterEach 1 - afterEach
+
+// Exercise 6.1
+describe('Testando promise - findAnimalByName', () => {
+  describe('Quando existe o animal com o nome procurado', () => {
+    test('Retorne o objeto do animal', () => {
+      return getAnimal('Dorminhoco').then(animal => {
+        expect(animal).toEqual({ name: 'Dorminhoco', age: 1, type: 'Dog' });
+      });
+    });
+  });
+  describe('Quando não existe o animal com o nome procurado', () => {
+    test('Retorna um erro', () => {
+      return getAnimal('Bob').catch(error =>
+        expect(error).toEqual('Nenhum animal com esse nome!')
+      );
+    });
+  });
+});
+
+// Exercise 6.2
+describe('Testando promise - findAnimalByAge', () => {
+  describe('Quando existe o animal com a idade procurada', () => {
+    test('Retorne o array com o objeto do animal', () => {
+      return getAnimalByAge(1).then(animal => {
+        expect(animal).toEqual([{ name: 'Dorminhoco', age: 1, type: 'Dog' }]);
+      });
+    });
+  });
+  describe('Quando não existe o animal com a idade procurada', () => {
+    test('Retorna um erro', () => {
+      return getAnimalByAge(8000).catch(error =>
+        expect(error).toEqual('Nenhum animal com essa idade!')
+      );
+    });
+  });
+});
