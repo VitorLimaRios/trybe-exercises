@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario bloco 6</title>
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+</head>
+<body>
+  <form action="">
+    <section class="container">
+      <div class="field">
+        <div class="control">
+          <label class="label" for="nome">Nome: <input class="input" type="text" name="nome" id="nome" maxlength="40" required></label>
+          <br>
+          <label class="label" for="email">Email: <input type="text" class="input" name="email" id="email" maxlength="50" required></label>
+          <br>
+          <label class="label" for="cpf">CPF: <input class="input" type="text" name="cpf" id="cpf" maxlength="13" required></label>
+          <br>
+          <label class="label" for="endereco">Endereço: <input type="text" class="input" name="endereco" id="endereco" maxlength="200" required></label>
+          <br>
+          <label class="label" for="cidade">Cidade: <input type="text" class="input" name="cidade" id="cidade" maxlength="28" required></label>
+          <br>
+          <label class="label" for="estados">Estado: 
+            <div class="select">
+              <select name="estados" id="estados" required>
+              </select>
+            </div>
+          </label>
+          <br>
+          <label class="radio" for="casa"><input type="radio" name="moradia" id="casa" checked>Casa</label>
+          <label class="radio" for="apartamento"><input type="radio" name="moradia" id="apartamento">Apartamento</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label class="label" for="resumo">Resumo do currículo: <textarea class="textarea" name="resumo" id="resumo" maxlength="1000" required></textarea></label>
+          <br>
+          <label class="label" for="cargo">Cargo: <input class="input" type="text" name="cargo" id="cargo" maxlength="40" required></label>
+          <br>
+          <label class="label" for="descricao">Descrição do cargo: <input class="input" type="text" name="descricao" id="descricao" maxlength="500" required></label>
+          <br>
+          <label class="label" for="data">Data de inicio: <input class="input" type="date" name="data" id="data" required></label>
+        </div>
+      </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-success" type="submit" id="enviar">Enviar</button>
+          <button class="button is-danger" type="reset">Limpar Campos</button>
+        </div>
+      </div>
+    </section>
+  </form>
+  <div class="container"><div id="mostrarDados"> </div></div>
+  <script src="script.js"></script>
+</body>
+</html>
